@@ -1,32 +1,3 @@
-/*
-	v1.3.1
-	------
-	- Applied a coding style to entire plugin for future updates.
-		- All Translations have been renamed and are not compatible with prior.
-	- Added cvar zprop_config, which lets you change the zprop configuration file whenever you wish.
-		- Lets you create zprop files for each map, to help balance or whatever you fancy.
-	- Added cvar zprop_team_restrict, which allows you to restrict the !zprop command to humans and/or zombies.
-	- Added cvar zprop_commands, which lets you define which commands access the ZProp feature.
-		- Removes the hardcoded !zprop access.
-	- Added zprop_enabled, which allows you to enable/disable the entire plugin.
-	- Optimized aspects of the plugin where possible.
-	- Cached contents pf prop defines to remove unnecessary load.
-	- Added support for morecolors.inc and Zombie:Reloaded natives.
-	- Replaced zprop_credits_spawn with zprop_credits_spawn_human and zprop_credits_spawn_zombie.
-	- Added support for updating cvars in-game.
-
-	v1.3.3
-	------
-	- Fixed a logic snafu that wasn't resolved in public version where props were only pre-cached once.
-	- Assigned each prop a unique targetname for other plugins to target them, if desired
-		- "ZProp UserId UniqueIndex
-
-	v1.3.4
-	------
-	- Disables ZProp during Round End
-	- Fixed random bugs that were causing errors.
-*/
-
 #pragma semicolon 1
 #include <sourcemod>
 #include <sdktools>
